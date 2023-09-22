@@ -1,0 +1,720 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    overflow-x : hidden;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    background-color: #2B4141;
+    justify-content: space-around;
+    /* padding: 40px 0; */
+    top: 0;
+    width: 100vw;
+    height: 98px;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo img{
+    position: absolute;
+    object-fit: cover;
+    /* width: 30vw;
+    height: auto; */
+    left: 5px;
+    top: 5px;
+    /* z-index: 2; */
+    
+}
+
+nav ul{
+    display: flex; 
+    list-style: none;
+    width: 50%;
+    /* background-color: white; */
+    justify-content: space-between;
+    /* z-index: 2; */
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    /* z-index: 2; */
+}
+
+nav ul li a:hover{
+    color: #FFC122;
+}
+.active{
+    color: #FFC122;
+}
+
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 25px;
+    justify-content: space-between;
+    left: 15vw;
+    position: relative;
+    /* z-index: 2; */
+}
+
+
+#click{
+    position: absolute;
+    width: 40px;
+    height: 35px;
+    opacity: 0;
+    /* left: -6px; */
+    right: 7.5vw;
+    /* top: -3px; */
+    cursor: pointer;
+    z-index: 3;
+}
+.menu-toggle span{
+    z-index: 2;
+    display: block;
+    width: 33.6px;
+    height: 4px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+
+/* Form */
+
+.memberForm{
+    position: absolute;
+    width: 63.194vw;
+    height: 81.667vw;
+    left: 18.403vw;
+    top: 14.167vw;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 100px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 2.083vw;
+}
+
+.memberTitle{
+    position: absolute;
+    width: 63.194vw;
+    left: 0vw;
+    top: 3vw;
+    text-align: center;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.778vw;
+    color: #2B4141;
+}
+
+.lblFname{
+    position: absolute;
+    left: 4.653vw;
+    top: 8vw;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.736vw;
+
+    color: #000000;
+
+}
+
+#firstName{
+    position: absolute;
+    width: 53.750vw;
+    height: 2.639vw;
+    left:  4.653vw;
+    top: 11vw;
+    font-size: 1.736vw;
+    background: #FFFFFF;
+    border: 1px solid #2B4141;
+    border-radius:0.347vw;
+}
+
+.lblLname{
+    position: absolute;
+    left: 4.653vw;
+    top: 15vw;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.736vw;
+
+    color: #000000;
+}
+
+#lastName{
+    position: absolute;
+    width: 53.750vw;
+    height: 2.639vw;
+    left:  4.653vw;
+    top: 18vw;
+    font-size: 1.736vw;
+    background: #FFFFFF;
+    border: 1px solid #2B4141;
+    border-radius:0.347vw;
+}
+
+.lblPnum{
+    position: absolute;
+    left: 4.653vw;
+    top: 22vw;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.736vw;
+
+    color: #000000;
+}
+
+#phoneNum{
+    position: absolute;
+    width: 53.750vw;
+    height: 2.639vw;
+    left:  4.653vw;
+    top: 25vw;
+    font-size: 1.736vw;
+    background: #FFFFFF;
+    border: 1px solid #2B4141;
+    border-radius: 0.347vw;
+}
+
+.lblDoB{
+    position: absolute;
+    left: 4.653vw;
+    top: 29vw;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.736vw;
+
+    color: #000000;
+}
+
+#dateOfBirth{
+    position: absolute;
+    width: 53.750vw;
+    height: 2.639vw;
+    left:  4.653vw;
+    top: 32vw;
+    font-size: 1.736vw;
+    background: #FFFFFF;
+    border: 1px solid #2B4141;
+    border-radius: 0.347vw;
+}
+
+.lblEmail{
+    position: absolute;
+    left: 4.653vw;
+    top: 36vw;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.736vw;
+
+    color: #000000;
+}
+
+#emailForm{
+    position: absolute;
+    width: 53.750vw;
+    height: 2.639vw;
+    left:  4.653vw;
+    top: 39vw;
+    font-size: 1.736vw;
+    background: #FFFFFF;
+    border: 1px solid #2B4141;
+    border-radius: 0.347vw;
+}
+
+.lblPass{
+    position: absolute;
+    left: 4.653vw;
+    top: 43vw;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.736vw;
+
+    color: #000000;
+}
+
+#password{
+    position: absolute;
+    width: 26.389vw;
+    height: 2.639vw;
+    left:  4.653vw;
+    top: 46vw;
+    font-size: 1.736vw;
+    background: #FFFFFF;
+    border: 1px solid #2B4141;
+    border-radius: 0.347vw;
+}
+
+.lblConf{
+    position: absolute;
+    left: 32.083vw;
+    top: 43vw;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.736vw;
+    color: #000000;
+}
+
+#confPass{
+    position: absolute;
+    width: 26.389vw;
+    height: 2.639vw;
+    left:  32.083vw;
+    top: 46vw;
+    font-size: 1.736vw;
+    background: #FFFFFF;
+    border: 1px solid #2B4141;
+    border-radius: 0.347vw;
+}
+
+.lblAdd{
+    position: absolute;
+    left: 4.653vw;
+    top: 50vw;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.736vw;
+
+    color: #000000;
+}
+
+#addressForm{
+    position: absolute;
+    width: 53.750vw;
+    height: 7.778vw;
+    left:  4.653vw;
+    top: 53vw;
+    font-size: 1.736vw;
+    background: #FFFFFF;
+    border: 1px solid #2B4141;
+    border-radius: 0.347vw;
+}
+
+.lblTerms{
+    position: absolute;
+    left: 8.5vw;
+    top: 63vw;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.736vw;
+
+    color: #000000;
+}
+
+#terms{
+    position: absolute;
+    width: 2.083vw;
+    height: 2.083vw;
+    left:  4.653vw;
+    top: 63vw;
+    background: #FFFFFF;
+    border: 1px solid #2B4141;
+    border-radius: 0.347vw;
+}
+
+.agree{
+    position: absolute;
+    left: 0vw;
+    top: 67vw;
+    margin: 0vw 4.653vw;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.736vw;
+
+    color: #000000;
+}
+
+.submitBtn{
+    position: absolute;
+    width: 24.306vw;
+    height: 5vw;
+    left:  19.514vw;
+    top: 73vw;
+    background-color: #2B4141;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    line-height: 5vw;
+    font-size: 2.431vw;
+    border-radius: 2.083vw;
+
+}
+
+
+
+.label-input {
+    position: absolute;
+    font-weight: 400;
+    font-size: 1.736vw;
+    color: #000000;
+}
+
+/* Error */
+#fnameError {
+    position: absolute;
+    width: 100%;
+    left: 4.653vw;
+    top: 13.5vw; 
+    font-size: 1.2vw; 
+    color: red;
+}
+#lnameError {
+    position: absolute;
+    width: 100%;
+    left: 4.653vw;
+    top: 20.5vw; 
+    font-size: 1.2vw; 
+    color: red;
+}
+#phoneNumError {
+    position: absolute;
+    width: 100%;
+    left: 4.653vw;
+    top: 27.5vw; 
+    font-size: 1.2vw; 
+    color: red;
+}
+
+#dateOfBirthError {
+    position: absolute;
+    width: 100%;
+    left: 4.653vw;
+    top: 34.5vw; 
+    font-size: 1.2vw; 
+    color: red;
+}
+
+#emailError {
+    position: absolute;
+    width: 100%;
+    left: 4.653vw;
+    top: 41.5vw; 
+    font-size: 1.2vw; 
+    color: red;
+}
+#passwordError {
+    position: absolute;
+    width: 100%;
+    left: 4.653vw;
+    top: 48.5vw; 
+    font-size: 1.2vw; 
+    color: red;
+}
+
+#confPassError {
+    position: absolute;
+    width: 100%;
+    left: 4.653vw;
+    top: 48.5vw; 
+    font-size: 1.2vw; 
+    color: red;
+}
+
+#addressError {
+    position: absolute;
+    width: 100%;
+    left: 4.653vw;
+    top: 61vw; 
+    font-size: 1.2vw; 
+    color: red;
+}
+#errorCheck {
+    position: absolute;
+    width: 100%;
+    left: 4.653vw;
+    top: 65.5vw; 
+    font-size: 1.2vw; 
+    color: red;
+}
+
+
+/* footer */
+.container{
+    position: relative;
+    max-width: 1170px;
+    margin-top: 10vw;
+    left: 6.014vw;
+}
+
+.footer{
+    position: absolute;
+    background-color: #2B4141;
+    padding: 5vw 0;
+    top: 100vw;
+    width: 100vw;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col p{
+    font-size: 2vw;
+    color: white;
+    margin-bottom: 2.083vw;
+    font-weight: 500;
+    position: relative;
+}
+
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 1.389vw;
+    color: grey;
+    font-weight: 300;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+
+}
+
+.footer-col ul li a:hover{
+    color: white;
+    padding-left: 8px;
+}
+
+.socialMedia{
+    position: absolute;
+    display: flex;
+    top: -10vw;
+}
+
+.socialMedia p{
+    position: absolute;
+    left: 70vw;
+    width: 100vw;
+    font-size: 2.083vw;
+    color: white;
+    margin-bottom: 10vw;
+}
+
+.mediaIcon{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 20vw;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    top: 4vw;
+    left: 69.5vw;
+}
+
+.icon41{
+    width: 2.847vw;
+    height: 2.847vw;
+    /* margin: auto; */
+}
+.iconEmail{
+    width: 3.819vw;
+    height: 2.778vw;
+}
+
+.join{
+    position: absolute;
+}
+.joinP{
+    position: absolute;
+    height: 3.264vw;
+    left: 7.014vw;
+    /* top: 4589px; */
+    width: 100vw;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.778vw;
+
+    color: #FFFFFF;
+    margin-bottom: 10 vw;
+}
+
+.emailtext{
+    position: absolute;
+    left: 6.944vw;
+    top: 5vw;
+    height: 2.569vw;
+    width: 18.194vw;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    background: #FFFFFF;
+    border-radius: 0.694vw;
+    color: rgba(0, 0, 0, 0.5);
+}
+.emailtext::placeholder{
+    position: absolute;
+    margin-left: 1vw;
+    line-height: 2.569vw;
+}
+
+.goldBox{
+    position: absolute;
+    height: 2.569vw;
+    left: 26.458vw;
+    width: 7.431vw;
+    /* right: 952px; */
+    top: 5vw;
+
+    background: #FFC122;
+    border-radius: 0.694vw;
+}
+
+.signupText{
+    position: absolute;
+    left: 1vw;
+    top: 0.3vw;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+
+    color: white;
+}
+
+.footer-bottom{
+    position: relative;
+    margin-top: 5vw;
+}
+
+.copyright{
+    position: absolute; 
+    bottom: -3vw;
+    width: 100vw;
+    left: 0;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.736vw;
+    color: #FFFFFF;
+}
+
+.footerGrandCity{
+    position: absolute;
+    width: 17.083vw;
+    height: auto;
+    right: 0vw;
+    bottom: -5vw;
+
+}
+
+.location{
+    position: absolute;
+    left: 70vw;
+    top: 0vw;
+}
+.addressLoc{
+    /* position: absolute; */
+    width: 20vw;
+    font-size: 1.389vw;
+    font-weight: 400;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 900px){
+    nav ul{
+        width: 50%;
+        /* font-size: 14px; */
+        font-size: 1.556vw;
+    }
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+/* ukuran mobile */
+
+@media screen and (max-width: 720px){
+    .menu-toggle{
+        display: flex;
+    }
+    nav ul{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 80%;
+        flex-direction: column;
+        height: 100vh;
+        align-items: center;
+        justify-content:space-evenly;
+        z-index: -2;
+        right: -100%;
+        background-color: #2B4141;
+    }
+    /* #check:checked ~ ul{
+        left: 0%;
+    } */
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+
+
+    #click:checked ~ ul{
+        right: 0%;
+    }
+
+    .footer-col ul-li a{
+        font-size: 15px;
+    }
+    .footer-col p{
+        font-size: 17px;
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+    .memberForm{
+        top: 30vw;
+        /* width: 80vw;
+        height: 100vw;
+        left: 10vw; */
+    }
+    
+    .footer{
+        top:150vw;
+    }
+}
